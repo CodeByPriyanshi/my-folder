@@ -4,17 +4,24 @@ let person={
     class:"BCA",
     village:"Tilapta"
 }
+    let OutName=document.getElementById("output-Name");
+    let outLname=document.getElementById("output-Lname");
+    let outclass=document.getElementById("output-class");
+
+    OutName.innerHTML=person.firstname;
+    outLname.innerHTML=person.lastname;
+    outclass.innerHTML=person.class;
+    console.log(person);
 function print(){
     let Name=document.getElementById("name").value;
     let Lastname=document.getElementById("lastname").value;
     let Class=document.getElementById("class").value;
-    
-    let OutName=document.getElementById("output-Name");
-    OutName.innerHTML="You Enter FirstName:"+Name;
-    let outLname=document.getElementById("output-Lname");
-    outLname.innerHTML="You Enter Last Name:"+Lastname;
-     let outclass=document.getElementById("output-class");
-    outclass.innerHTML="You Enter Class:"+Class;
-    document.getElementById("output-div").style.display="flex"
+    person.firstname=Name;
+    person.lastname=Lastname;
+    person.class=Class;
+    OutName.innerHTML=Name;
+    outLname.innerHTML=Lastname;
+    outclass.innerHTML=Class;
+    console.log(person)
 }
  

@@ -8,7 +8,7 @@ body{
 div{
     height: 50vh;
     width: 30%;
-    background: #f4f;
+    background:#aaa;
     display: flex;
     flex-direction: column;
     padding: 30px 30px;
@@ -35,5 +35,5 @@ span{
     padding: 10px 0px;
 }
 #output-div{
-    display: none;
+    /* display: none; */
 }
